@@ -1,5 +1,6 @@
 # Cloud Run Template Microservice
 
+[//]: # (Some changes)
 A template repository for a Cloud Run microservice, written in Java.
 
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
