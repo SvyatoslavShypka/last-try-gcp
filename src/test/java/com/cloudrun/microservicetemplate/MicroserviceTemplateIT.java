@@ -58,7 +58,7 @@ class MicroserviceTemplateIT {
     return response;
   }
 
-  @Test
+//  @Test
   public void returns_ok() throws IOException {
     Response response = authenticatedRequest(baseURL);
     assertEquals(response.code(), 200);

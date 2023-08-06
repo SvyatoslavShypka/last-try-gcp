@@ -31,6 +31,10 @@ version = '0.0.1-SNAPSHOT'
 description = 'microservice-template'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
+test {
+    useJUnitPlatform()
+}
+
 publishing {
     publications {
         maven(MavenPublication) {

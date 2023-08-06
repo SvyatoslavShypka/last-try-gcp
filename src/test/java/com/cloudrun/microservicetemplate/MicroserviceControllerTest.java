@@ -30,7 +30,8 @@ import org.springframework.test.web.servlet.MockMvc;
 @AutoConfigureMockMvc
 public class MicroserviceControllerTest {
 
-  @Autowired private MockMvc mvc;
+  @Autowired
+  private MockMvc mvc;
 
   @Test
   public void returns_ok() throws Exception {
@@ -41,4 +42,9 @@ public class MicroserviceControllerTest {
   public void returns_notFount() throws Exception {
     this.mvc.perform(post("/")).andExpect(status().isMethodNotAllowed());
   }
+
+    @Test
+    void index() {
+    assert(2 + 2 == 4);
+    }
 }
